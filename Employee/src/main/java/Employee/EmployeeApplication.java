@@ -1,13 +1,18 @@
 package Employee;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import Employee.model.Employee;
+import Employee.repository.EmployeeRepository;
 
 @SpringBootApplication
 public class EmployeeApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EmployeeApplication.class, args);
+		
 	}
 	
 	/* pour créer la base de donnée 

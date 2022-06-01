@@ -54,8 +54,7 @@ public class EmployeeController {
 		Employee employee = employeeRepository.findById(employeeId);
 		employee.setEmail(employeeDetails.getEmail());
 		employee.setFirstname(employeeDetails.getFirstname());
-		employee.setLastname(employeeDetails.getLastname());
-		
+		employee.setLastname(employeeDetails.getLastname());	
 	}
 	
 	// delete employee
@@ -65,8 +64,7 @@ public class EmployeeController {
 		Employee employee = employeeRepository.findById(employeeId);
 		this.employeeRepository.delete(employee);
 		Map<String, Boolean> response = new HashMap<>();
-		response.put("deleted", Boolean.TRUE);
-		
+		response.put("deleted", Boolean.TRUE);	
 	}*/
 	
 	
